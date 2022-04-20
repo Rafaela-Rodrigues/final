@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+  --header-color: #ffffff;
+  --header-text-color: #333333;
+  --header-button-color: #F0572D;
+  --header-button-hover: #F0572D;
+  --primary-color: #F0572D;
+  --primary-hover-color: #d84921;
+  --text-color: #31363F;
+  --bg-color: #ffffff;
+  --modal-bg-color: #fff;
+  --input-bg: #fff;
+  --input-text-color: #282c35;
+  --bg-card: #fff;
+  }
+  [data-theme="dark-theme"] {
+    --header-color: #363c48;
+    --header-text-color: #333333;
+    --header-button-color: #fff;
+    --header-button-hover: #F0572D;
+    --primary-color: #F0572D;
+    --primary-hover-color: #d84921;
+    --text-color: #fff;
+    --bg-color: #282c35;
+    --modal-bg-color: #282c35;
+    --input-bg: #dee;
+    --input-text-color: #282c35;
+    --bg-card: #2c313a;
+
+  }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    /* Chrome, Safari and Opera */
+    .scrollbar::-webkit-scrollbar {
+      display: visible;
+    }
+    
+    .scrollbar {
+      -ms-overflow-style: visible;  /* IE and Edge */
+      scrollbar-width: visible;  /* Firefox */
+    }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.MuiInputLabel-root {
+  color: rgb(53, 53, 53);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  
+}
+
+.MuiButton-root, .MuiFab-circular {
+    color: white !important; 
+    background-color: #F0572D !important;
+}
+
+/* .MuiSvgIcon-root {
+    color: white !important;
+} */
+
